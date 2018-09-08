@@ -1,0 +1,52 @@
+{
+  "_from": "git+https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+  "_id": "volumebuttons@0.0.3",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/volumebuttons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+    "rawSpec": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+    "saveSpec": "git+https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+    "fetchSpec": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+    "gitCommittish": null
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git#203fcf67260511f06fd32b8a93d33a93273f4a43",
+  "_spec": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git",
+  "_where": "/home/ivan/Programming/NodeJs/Websocket/app",
+  "author": {
+    "name": "ManuelDeveloper"
+  },
+  "bugs": {
+    "url": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "com.manueldeveloper.volume-buttons",
+    "platforms": [
+      "android"
+    ]
+  },
+  "deprecated": false,
+  "description": "Cordova plugin which notifies when the user presses the volume buttons of the device",
+  "homepage": "https://github.com/manueldeveloper/cordova-plugin-volume-buttons/blob/master/README.md",
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "volume",
+    "buttons"
+  ],
+  "license": "Apache 2.0",
+  "name": "volumebuttons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git"
+  },
+  "version": "0.0.3"
+}
