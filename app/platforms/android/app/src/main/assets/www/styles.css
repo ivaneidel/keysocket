@@ -1,0 +1,144 @@
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: monospace;
+}
+body {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+.header {
+  padding-bottom: 0;
+}
+.header .upper-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  background-color: #ff7777;
+}
+.header .upper-bar .battery-indicator {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  min-width: 60px;
+  height: 60px;
+  min-height: 46px;
+  -webkit-transition: all 150ms ease;
+  -moz-transition: all 150ms ease;
+  -ms-transition: all 150ms ease;
+  -o-transition: all 150ms ease;
+  transition: all 150ms ease;
+  cursor: pointer;
+  border-radius: 50%;
+  outline: none;
+}
+
+.header .upper-bar .battery-indicator #batpctg {
+  margin-right: 3px;
+}
+
+button,
+input,
+textarea {
+  border: 1px solid #ccc;
+  background-color: transparent;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+button {
+  background-color: #eee;
+  outline: 0;
+}
+textarea {
+  min-height: 200px;
+}
+button:active,
+button:hover {
+  background-color: #ccc;
+}
+#conexion-establecida {
+  display: block;
+  font-size: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
+}
+.conexion-servidor {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.conexion-servidor .botones {
+  display: flex;
+}
+#grilla-botones {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+#grilla-botones button {
+  width: 25%;
+  text-transform: uppercase;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button#conectar-servidor {
+  display: flex;
+}
+#mouse-section {
+  background-color: #ccc;
+  display: block;
+  width: 100vw;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+#mouse-section span {
+  text-transform: uppercase;
+  display: table;
+  width: auto;
+}
+
+#mouse-teclado {
+  display: flex;
+  padding: 10px;
+}
+#mouse-teclado button {
+  text-transform: uppercase;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hacer-click {
+  text-transform: uppercase;
+  height: 35px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="com.ivaneidelstein.keysocket" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Keysocket</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Permite enviar 'pulsaciones' de teclas a un servidor de NodeJS ejecutando un WebSocket
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="ivan.eidelstein@gmail.com">
+        Ivan Eidelstein
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
@@ -26,5 +26,6 @@
     <plugin name="com.manueldeveloper.volume-buttons" spec="https://github.com/manueldeveloper/cordova-plugin-volume-buttons.git" />
     <plugin name="cordova-plugin-statusbar" spec="^2.4.2" />
     <preference name="StatusBarBackgroundColor" value="#FF5555" />
+    <plugin name="cordova-plugin-background-mode" spec="^0.7.2" />
     <engine name="android" spec="^7.0.0" />
 </widget>
