@@ -43,10 +43,24 @@ const getBatteryPercentage = callback => {
   );
 };
 
+const upVol = () => {
+  const { exec } = require("child_process");
+  exec("pamixer --increase 5", (err, stdout, stderr) => {
+    return;
+  });
+};
+
+const upDown = () => {
+  const { exec } = require("child_process");
+  exec("pamixer --decrease 5", (err, stdout, stderr) => {
+    return;
+  });
+};
+
 console.log(`Servidor corriendo en ws://${ipActual}:${port}`);
 
 wss.on("connection", (ws, req) => {
-  console.log(`Conexión ID: '${req.headers["sec-websocket-key"]}'`);
+  console.log(`Conexión ID: '${req.headers["sec-websocket-key"]}'\n`);
   ws.send(
     JSON.stringify({
       type: "CONNECTION_START",
@@ -56,7 +70,7 @@ wss.on("connection", (ws, req) => {
   );
 
   ws.on("message", message => {
-    console.log(message);
+    // console.log(message);
 
     const parametros = message.split(",");
     const tipoEvento = parametros.splice(0, 1)[0];
@@ -64,6 +78,16 @@ wss.on("connection", (ws, req) => {
     if (tipoEvento === "teclado") {
       const combinacion = parametros.splice(-1, 1)[0];
       if (parametros.length >= 2 && combinacion) {
+        if (parametros[0] === "command") {
+          if (parametros[1] === "volup") {
+            // console.log('aca');
+            
+            upVol();
+          } else if (parametros[1] === "voldown") {
+            upDown();
+          }
+        }
+
         ks.sendCombination(parametros);
       } else {
         ks.sendKey(parametros[0]);
